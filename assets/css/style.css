@@ -1,31 +1,66 @@
-/* 自定义主色调 */
+/* 主色系配置 */
 :root {
-    --primary-color: #2a5d84; /* 企业蓝 */
-    --accent-color: #ff6b35;  /* 活力橙 */
+    --primary-blue: #2a5d84;    /* 主品牌色 */
+    --dark-blue: #1a3d5e;       /* 导航栏深色 */
+    --medium-gray: #6c757d;     /* 次级文字色 */
+    --light-gray: #f8f9fa;      /* 背景灰色 */
+    --accent-orange: #ff6b35;   /* 强调色 */
 }
 
-/* 响应式断点 */
-@media (max-width: 768px) {
-    .navbar-brand img { width: 140px; }
-    .swiper-caption h2 { font-size: 1.5rem; }
+/* 基础样式 */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--medium-gray);
+    line-height: 1.6;
 }
 
-/* 轮播样式 */
-.main-swiper {
+/* 导航栏 */
+.bg-blue {
+    background: var(--dark-blue) !important;
+}
+.navbar-brand img {
+    width: 160px;
+    height: auto;
+}
+
+/* 首屏横幅 */
+.hero-banner {
     height: 80vh;
-    margin-top: 76px; /* 导航栏高度补偿 */
+    background: linear-gradient(rgba(0,0,0,0.6), url('assets/images/banner-1.webp') center/cover;
+    position: relative;
+    margin-top: 76px; /* 补偿固定导航高度 */
 }
-.swiper-img {
-    width: 100%;
-    height: 100%;
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+/* 服务卡片 */
+.service-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+}
+.service-card img {
+    height: 250px;
     object-fit: cover;
 }
 
-/* 服务卡片悬停效果 */
-.card {
-    transition: transform 0.3s;
-}
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+/* 响应式适配 */
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 60vh;
+    }
+    .service-card img {
+        height: 180px;
+    }
 }
