@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="重庆大渡口安家建材 - 专业装修施工团队，重陶市场实体门店，提供瓷砖卫浴批发一站式服务">
-    <title>大渡口家装网 - 安家建材装修与建材批发</title>
+    <!-- 必须的meta标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- CSS文件 -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- 标题与SEO优化 -->
+    <title>大渡口家装网 - 重庆安家建材一站式服务</title>
+    <meta name="description" content="重庆大渡口专业装修服务，提供旧房翻新、建材批发、拆除出渣服务，重陶市场实体保障">
+    
+    <!-- CDN引用 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/8.0.7/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body>
 
-    <!-- 顶部导航 -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="安家建材" width="120">
+                <img src="assets/images/logo.png" alt="安家建材" width="180">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#home">首页</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">服务项目</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#products">建材批发</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#cases">工程案例</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">装修服务</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">建材商城</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- 轮播图 -->
-    <section id="home" class="hero">
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="images/banner1.jpg" class="w-100" alt="专业装修施工团队">
-                    <div class="carousel-caption">
-                        <h1>大渡口家装首选品牌</h1>
-                        <p>十年施工经验保障，建材批发直营价</p>
-                    </div>
+    <!-- 轮播图 (推荐尺寸：1920x800) -->
+    <div class="swiper main-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/images/banners/1.jpg" class="swiper-img" alt="专业拆除团队">
+                <div class="swiper-caption">
+                    <h2>专业拆除出渣服务</h2>
+                    <p>配备专业运输车辆，当天完成清运</p>
                 </div>
-                <!-- 更多轮播项 -->
             </div>
-            <div class="swiper-pagination"></div>
+            <!-- 更多轮播项 -->
         </div>
-    </section>
+        <div class="swiper-pagination"></div>
+    </div>
 
-    <!-- 服务项目 -->
-    <section id="services" class="py-5 bg-light">
+    <!-- 服务亮点 -->
+    <section class="highlights py-5 bg-light">
         <div class="container">
-            <h2 class="section-title text-center mb-5">核心服务</h2>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="service-card">
-                        <img src="images/service-renovation.jpg" class="card-img-top" alt="全屋装修">
+                    <div class="card h-100">
+                        <img src="assets/images/cases/renovation.jpg" class="card-img-top" alt="旧房翻新" loading="lazy">
                         <div class="card-body">
-                            <h3>全屋装修</h3>
-                            <p>设计施工一体化服务，含水电改造</p>
+                            <h5><i class="fas fa-hammer me-2"></i>旧房翻新</h5>
+                            <p>水电改造/墙面翻新/厨卫升级</p>
                         </div>
                     </div>
                 </div>
@@ -69,66 +70,9 @@
         </div>
     </section>
 
-    <!-- 建材产品 -->
-    <section id="products" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">热销建材</h2>
-            <div class="row g-4">
-                <div class="col-md-3">
-                    <div class="product-card">
-                        <img src="images/product-tile.jpg" class="img-fluid" alt="抛光瓷砖">
-                        <div class="product-info">
-                            <h4>抛光瓷砖</h4>
-                            <p>规格：800x800mm</p>
-                            <p class="price">¥68/平米</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- 更多产品 -->
-            </div>
-        </div>
-    </section>
-
-<!-- 新增在线报价模块 -->
-<section id="calculator" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="section-title">装修报价计算器</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <form id="quoteForm">
-                    <div class="mb-3">
-                        <label>房屋面积（㎡）</label>
-                        <input type="number" class="form-control" id="area" required>
-                    </div>
-                    <div class="mb-3">
-                        <label>装修类型</label>
-                        <select class="form-select" id="type">
-                            <option value="simple">简装</option>
-                            <option value="medium">精装</option>
-                            <option value="luxury">豪装</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary">立即计算</button>
-                </form>
-            </div>
-            <div class="col-md-6">
-                <div id="quoteResult" class="bg-white p-4 rounded shadow"></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- 动态加载案例 -->
-<section id="cases" class="py-5">
-    <div class="container">
-        <h2 class="section-title">最新案例</h2>
-        <div class="row g-4" id="caseContainer"></div>
-    </div>
-</section>
-
-<!-- 脚本加载 -->
-<script src="js/lib/swiper-bundle.min.js"></script>
-<script src="js/lib/axios.min.js"></script>
-<script type="module" src="js/main.js"></script>
+    <!-- 脚本引用 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
