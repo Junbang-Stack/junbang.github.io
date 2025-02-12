@@ -1,67 +1,57 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <!-- 必须的meta标签 -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- 标题与SEO优化 -->
-    <title>大渡口家装网 - 重庆安家建材一站式服务</title>
-    <meta name="description" content="重庆大渡口专业装修服务，提供旧房翻新、建材批发、拆除出渣服务，重陶市场实体保障">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大渡口家装网 - 重庆安家建材专业服务</title>
     
     <!-- CDN引用 -->
     <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/8.0.7/swiper-bundle.min.css" rel="stylesheet">
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- 导航栏 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <!-- 固定导航 -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-blue">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.png" alt="安家建材" width="180">
+                <img src="assets/images/logo.webp" alt="安家建材" width="160">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">首页</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">装修服务</a></li>
-                    <li class="nav-item"><a class="nav-link" href="products.html">建材商城</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">服务项目</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">建材产品</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">联系我们</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- 轮播图 (推荐尺寸：1920x800) -->
-    <div class="swiper main-swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="assets/images/banners/1.jpg" class="swiper-img" alt="专业拆除团队">
-                <div class="swiper-caption">
-                    <h2>专业拆除出渣服务</h2>
-                    <p>配备专业运输车辆，当天完成清运</p>
-                </div>
-            </div>
-            <!-- 更多轮播项 -->
+    <!-- 首屏横幅 -->
+    <header class="hero-banner" id="home">
+        <div class="overlay"></div>
+        <div class="banner-content">
+            <h1 class="display-4">重庆大渡口专业装修服务</h1>
+            <p class="lead">重陶市场实体保障 · 一站式建材解决方案</p>
         </div>
-        <div class="swiper-pagination"></div>
-    </div>
+    </header>
 
-    <!-- 服务亮点 -->
-    <section class="highlights py-5 bg-light">
+    <!-- 服务项目 -->
+    <section class="section-services" id="services">
         <div class="container">
+            <h2 class="section-title"><i class="fas fa-tools"></i> 核心服务</h2>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="assets/images/cases/renovation.jpg" class="card-img-top" alt="旧房翻新" loading="lazy">
+                    <div class="service-card">
+                        <img src="assets/images/service-1.webp" class="card-img" alt="旧房翻新" loading="lazy">
                         <div class="card-body">
-                            <h5><i class="fas fa-hammer me-2"></i>旧房翻新</h5>
-                            <p>水电改造/墙面翻新/厨卫升级</p>
+                            <h3>旧房全面翻新</h3>
+                            <ul>
+                                <li>水电线路升级改造</li>
+                                <li>墙面地面专业处理</li>
+                                <li>厨卫空间整体翻新</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -70,9 +60,41 @@
         </div>
     </section>
 
+    <!-- 建材产品 -->
+    <section class="section-products bg-gray" id="products">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-warehouse"></i> 建材产品</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="assets/images/product-tile.webp" alt="瓷砖" loading="lazy">
+                    <h4>瓷砖系列</h4>
+                    <p>尺寸齐全/厂家直供</p>
+                </div>
+                <!-- 更多产品项 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="section-contact" id="contact">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-info">
+                    <h2><i class="fas fa-map-marker-alt"></i> 地址</h2>
+                    <p>重庆市大渡口区重陶市场A区18号</p>
+                    <h2><i class="fas fa-phone"></i> 联系电话</h2>
+                    <p>023-12345678 / 138-1234-5678</p>
+                </div>
+                <div class="contact-map">
+                    <!-- 预留地图位置 -->
+                    <div class="map-placeholder"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 脚本引用 -->
     <script src="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
