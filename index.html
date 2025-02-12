@@ -89,20 +89,46 @@
         </div>
     </section>
 
-    <!-- JS文件 -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script>
-        // 轮播图初始化
-        const swiper = new Swiper('.swiper', {
-            loop: true,
-            autoplay: {
-                delay: 5000,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-            },
-        });
-    </script>
+<!-- 新增在线报价模块 -->
+<section id="calculator" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title">装修报价计算器</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form id="quoteForm">
+                    <div class="mb-3">
+                        <label>房屋面积（㎡）</label>
+                        <input type="number" class="form-control" id="area" required>
+                    </div>
+                    <div class="mb-3">
+                        <label>装修类型</label>
+                        <select class="form-select" id="type">
+                            <option value="simple">简装</option>
+                            <option value="medium">精装</option>
+                            <option value="luxury">豪装</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">立即计算</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div id="quoteResult" class="bg-white p-4 rounded shadow"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 动态加载案例 -->
+<section id="cases" class="py-5">
+    <div class="container">
+        <h2 class="section-title">最新案例</h2>
+        <div class="row g-4" id="caseContainer"></div>
+    </div>
+</section>
+
+<!-- 脚本加载 -->
+<script src="js/lib/swiper-bundle.min.js"></script>
+<script src="js/lib/axios.min.js"></script>
+<script type="module" src="js/main.js"></script>
 </body>
 </html>
