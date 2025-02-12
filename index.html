@@ -3,105 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>安家建材 - 专业装修建材解决方案提供商</title>
-    <!-- 引入CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/swiper-bundle.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <meta name="description" content="重庆大渡口安家建材 - 专业装修施工团队，重陶市场实体门店，提供瓷砖卫浴批发一站式服务">
+    <title>大渡口家装网 - 安家建材装修与建材批发</title>
+    
+    <!-- CSS文件 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- 企业实力展示条 -->
-    <div class="top-bar bg-dark text-light py-2">
-        <div class="container d-flex justify-content-between">
-            <div>📞 服务热线：400-800-1234</div>
-            <div>🏆 已服务客户：<span class="counter" data-target="2580">0</span>+</div>
-        </div>
-    </div>
 
-    <!-- 动态导航栏 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <!-- 顶部导航 -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="assets/images/logo.png" alt="安家建材" height="50">
+                <img src="images/logo.png" alt="安家建材" width="120">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="mainNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">首页</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="products.html">产品中心</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">墙地面材料</a></li>
-                            <li><a class="dropdown-item" href="#">卫浴洁具</a></li>
-                            <li><a class="dropdown-item" href="#">装饰辅料</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="cases.html">工程案例</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">服务支持</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#home">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">服务项目</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">建材批发</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cases">工程案例</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- 全屏轮播 -->
-    <div class="swiper hero-swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="assets/images/banner1.jpg" class="swiper-img" alt="建材展厅">
-                <div class="swiper-caption">
-                    <h2 class="display-4">一站式建材解决方案</h2>
-                    <p class="lead">提供设计、施工、配送全流程服务</p>
+    <!-- 轮播图 -->
+    <section id="home" class="hero">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/banner1.jpg" class="w-100" alt="专业装修施工团队">
+                    <div class="carousel-caption">
+                        <h1>大渡口家装首选品牌</h1>
+                        <p>十年施工经验保障，建材批发直营价</p>
+                    </div>
                 </div>
+                <!-- 更多轮播项 -->
             </div>
-            <!-- 更多轮播项 -->
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
-    </div>
+    </section>
 
-    <!-- 核心优势 -->
-    <section class="core-advantages py-5 bg-light">
+    <!-- 服务项目 -->
+    <section id="services" class="py-5 bg-light">
         <div class="container">
-            <h2 class="section-title text-center mb-5">为什么选择安家建材</h2>
+            <h2 class="section-title text-center mb-5">核心服务</h2>
             <div class="row g-4">
-                <div class="col-md-3" data-aos="fade-up">
-                    <div class="card h-100 text-center">
-                        <img src="assets/icons/quality.svg" class="card-icon" alt="品质保障">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="images/service-renovation.jpg" class="card-img-top" alt="全屋装修">
                         <div class="card-body">
-                            <h5>正品保障</h5>
-                            <p>所有产品厂家直供，假一赔十</p>
+                            <h3>全屋装修</h3>
+                            <p>设计施工一体化服务，含水电改造</p>
                         </div>
                     </div>
                 </div>
-                <!-- 更多优势项 -->
+                <!-- 更多服务项 -->
             </div>
         </div>
     </section>
 
-    <!-- 产品分类展示 -->
-    <section class="product-showcase py-5">
+    <!-- 建材产品 -->
+    <section id="products" class="py-5">
         <div class="container">
-            <h2 class="section-title text-center mb-5">主营产品</h2>
+            <h2 class="section-title text-center mb-5">热销建材</h2>
             <div class="row g-4">
-                <div class="col-md-4" data-aos="zoom-in">
+                <div class="col-md-3">
                     <div class="product-card">
-                        <img src="assets/images/products/tile.jpg" class="product-img" alt="瓷砖系列">
-                        <div class="product-overlay">
-                            <h3>瓷砖系列</h3>
-                            <a href="#" class="btn btn-primary">查看详情</a>
+                        <img src="images/product-tile.jpg" class="img-fluid" alt="抛光瓷砖">
+                        <div class="product-info">
+                            <h4>抛光瓷砖</h4>
+                            <p>规格：800x800mm</p>
+                            <p class="price">¥68/平米</p>
                         </div>
                     </div>
                 </div>
-                <!-- 更多产品项 -->
+                <!-- 更多产品 -->
             </div>
         </div>
     </section>
 
-    <!-- 脚本引入 -->
+    <!-- JS文件 -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/swiper-bundle.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        // 轮播图初始化
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
 </body>
 </html>
