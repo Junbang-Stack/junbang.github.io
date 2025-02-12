@@ -3,120 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隽邦❤员巧的恋爱时光</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
-    <style>
-        /* 自定义样式 */
-        :root {
-            --primary-color: #ff4c6a;
-            --text-color: #5a3d5c;
-        }
-
-        body {
-            background: url('assets/bg.jpg') no-repeat center/cover;
-            font-family: 'Long Cang', cursive;
-            min-height: 100vh;
-            overflow-x: hidden;
-            position: relative;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            backdrop-filter: blur(5px);
-        }
-
-        .header {
-            text-align: center;
-            padding: 50px 0;
-            position: relative;
-        }
-
-        .love-date {
-            font-size: 2.5em;
-            color: var(--primary-color);
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            animation: heartbeat 1.5s infinite;
-        }
-
-        .timeline {
-            position: relative;
-            padding: 50px 0;
-        }
-
-        .timeline-item {
-            background: rgba(255,255,255,0.9);
-            border-radius: 15px;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.2);
-            transform: translateX(-50px);
-            opacity: 0;
-            transition: all 1s;
-        }
-
-        .love-letter {
-            background: rgba(255, 237, 240, 0.95);
-            border-radius: 15px;
-            padding: 30px;
-            margin: 40px 0;
-            position: relative;
-        }
-
-        /* 动画效果 */
-        @keyframes heartbeat {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-
-        .animate-on-scroll {
-            transform: translateX(0) !important;
-            opacity: 1 !important;
-        }
-    </style>
-    <link rel="stylesheet" href="style.css">
+    <title>安家建材 - 专业装修建材解决方案提供商</title>
+    <!-- 引入CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/swiper-bundle.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1 class="animate__animated animate__fadeInDown">刘隽邦❤杨员巧</h1>
-            <div class="love-date animate__animated animate__fadeInUp">
-                2018年11月23日 - 我们的故事开始
-            </div>
-        </div>
-
-        <div class="timeline">
-            <div class="timeline-item">
-                <h2>📅 第一天</h2>
-                <p>2018.11.23 - 你笑着答应了那个紧张的男孩</p>
-            </div>
-            <div class="timeline-item">
-                <h2>🎉 第100天</h2>
-                <p>2019.3.2 - 我们第一次共同旅行</p>
-            </div>
-            <div class="timeline-item">
-                <h2>🌟 第520天</h2>
-                <p>2020.5.25 - 疫情中的坚守与陪伴</p>
-            </div>
-        </div>
-
-        <div class="love-letter animate__animated animate__zoomIn">
-            <h2>💌 给最爱的员巧：</h2>
-            <p>从2018年11月23日开始，</p>
-            <p>每个清晨都比从前更值得期待，</p>
-            <p>每个黄昏都因你而充满色彩。</p>
-            <p>你是我平凡生活里的英雄梦想，</p>
-            <p>是我穿越人海找到的命中注定。</p>
-            <p style="text-align: right;">—— 永远爱你的隽邦</p>
+    <!-- 企业实力展示条 -->
+    <div class="top-bar bg-dark text-light py-2">
+        <div class="container d-flex justify-content-between">
+            <div>📞 服务热线：400-800-1234</div>
+            <div>🏆 已服务客户：<span class="counter" data-target="2580">0</span>+</div>
         </div>
     </div>
 
-    <!-- 飘落爱心 -->
-    <div class="hearts"></div>
+    <!-- 动态导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="安家建材" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">首页</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="products.html">产品中心</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">墙地面材料</a></li>
+                            <li><a class="dropdown-item" href="#">卫浴洁具</a></li>
+                            <li><a class="dropdown-item" href="#">装饰辅料</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="cases.html">工程案例</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">服务支持</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <script src="script.js"></script>
+    <!-- 全屏轮播 -->
+    <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/images/banner1.jpg" class="swiper-img" alt="建材展厅">
+                <div class="swiper-caption">
+                    <h2 class="display-4">一站式建材解决方案</h2>
+                    <p class="lead">提供设计、施工、配送全流程服务</p>
+                </div>
+            </div>
+            <!-- 更多轮播项 -->
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 核心优势 -->
+    <section class="core-advantages py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">为什么选择安家建材</h2>
+            <div class="row g-4">
+                <div class="col-md-3" data-aos="fade-up">
+                    <div class="card h-100 text-center">
+                        <img src="assets/icons/quality.svg" class="card-icon" alt="品质保障">
+                        <div class="card-body">
+                            <h5>正品保障</h5>
+                            <p>所有产品厂家直供，假一赔十</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 更多优势项 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品分类展示 -->
+    <section class="product-showcase py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">主营产品</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="product-card">
+                        <img src="assets/images/products/tile.jpg" class="product-img" alt="瓷砖系列">
+                        <div class="product-overlay">
+                            <h3>瓷砖系列</h3>
+                            <a href="#" class="btn btn-primary">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 更多产品项 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 脚本引入 -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
