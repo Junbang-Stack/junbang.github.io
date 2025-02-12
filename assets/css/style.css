@@ -1,0 +1,31 @@
+/* 自定义主色调 */
+:root {
+    --primary-color: #2a5d84; /* 企业蓝 */
+    --accent-color: #ff6b35;  /* 活力橙 */
+}
+
+/* 响应式断点 */
+@media (max-width: 768px) {
+    .navbar-brand img { width: 140px; }
+    .swiper-caption h2 { font-size: 1.5rem; }
+}
+
+/* 轮播样式 */
+.main-swiper {
+    height: 80vh;
+    margin-top: 76px; /* 导航栏高度补偿 */
+}
+.swiper-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 服务卡片悬停效果 */
+.card {
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
